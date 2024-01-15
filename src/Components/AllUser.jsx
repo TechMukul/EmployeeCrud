@@ -8,7 +8,7 @@ import {
 import React from "react";
 import { getUsers,deleteUser } from "./service/api";
 import { useEffect,useState } from "react";
-
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Styledtable=styled(Table)`
@@ -22,16 +22,18 @@ backgound:#000,
 
 function AllUser() {
   const [users,setusers]=useState([]);
+  const navigate =useNavigate();
 
   const getUsersdetails=async()=>{
     let response  =await getUsers();
-    console.log(response);
+    // console.log(response);
     setusers(response.data);
   }
 
   const deleteUserdata=async(id)=>{
-    await deleteUser(id);
-    getUsers();
+    await deleteUser(id);  
+    navigate("/all");
+    
   }
 
   useEffect(() => {

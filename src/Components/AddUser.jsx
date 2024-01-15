@@ -19,10 +19,10 @@ const Container = styled(FormGroup)`
 `;
 function AddUser() {
   const initialValue = {
-    name: "",
-    username: "",
-    email: "",
-    phone: "",
+    name: " ",
+    username: " ",
+    email: " ",
+    phone: " ",
   };
   const [user, setuser] = useState(initialValue);
   const navigate =useNavigate();
@@ -35,7 +35,7 @@ function AddUser() {
 
   const Adduserdetails = async() => {
     await Adduser(user);
-    navigate("/all")
+    navigate("/all");
   };
 
   return (
