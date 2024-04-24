@@ -39,7 +39,7 @@ import {
     const onValuechange = (e) => {
       // console.log(e.target.name,e.target.value);
       setuser({ ...user, [e.target.name]: e.target.value });
-      console.log(user);
+      // console.log(user);
     };
    
     const Adduserdetails = async() => {

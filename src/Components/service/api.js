@@ -14,7 +14,7 @@ export const getUsers = async () => {
     return await axios.get(API_URL);
   }
   catch(error){
-    console("Error while calling",error)
+    console.log("Error while calling",error)
   }
 };
 

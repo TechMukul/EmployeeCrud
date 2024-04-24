@@ -27,6 +27,20 @@
       "email": "manish@gmail.com",
       "phone": "999999999",
       "id": 4
+    },
+    {
+      "name": "Mukul Chauhan",
+      "username": "12121",
+      "email": "mukulchauhan8586@gmail.com",
+      "phone": "+919560498178",
+      "id": 5
+    },
+    {
+      "name": "Rohit Sharma",
+      "username": "saaaaaaaaa",
+      "email": "rohit@123hgmail.com",
+      "phone": "sas",
+      "id": 6
     }
   ]
 }
